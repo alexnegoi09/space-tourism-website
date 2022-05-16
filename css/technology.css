@@ -1,0 +1,317 @@
+body {
+    background-image: url('../assets/technology/background-technology-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 4%;
+}
+
+.header {
+    display: flex;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    align-self: center;
+    color: white;
+}
+
+.header span {
+    margin-right: 18px;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.picture-portrait {
+    display: none;
+}
+
+.picture-landscape {
+    width: 100%;
+    height: 170px;
+}
+
+.container {
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+
+.container-small {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    margin-bottom: 5%;
+}
+
+.buttons span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    color: white;
+    font-family: bellefair, serif;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons span:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-small {
+    font-family: 'barlow condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.4px;
+    margin-bottom: 3%;
+    color: #d0d6f9;
+}
+
+.title {
+    font-family: bellefair, serif;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 6%;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: barlow, sans-serif;
+    color: #d0d6f9;
+}
+
+
+/* added with JS */
+
+.active {
+    border: 1px solid white !important;
+}
+
+
+
+@media (min-width: 700px) {
+    body {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+
+    .header {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.4px;
+        align-self: flex-start;
+        margin-left: 80px;
+    }
+
+    .container {
+        gap: 8%;
+    }
+
+    .container-small {
+        width: 55%;
+    }
+
+    .picture-landscape {
+        height: 310px;
+    }
+
+    .buttons span {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .title-small {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .buttons {
+        gap: 5%;
+        margin-bottom: 7%;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url('../assets/technology/background-technology-desktop.jpg');
+        gap: 0;
+    }
+
+    .header {
+        text-align: left;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.7px;
+        margin-left: 100px;
+    }
+
+    .header span {
+        margin-right: 28px;
+    }
+
+    .picture-landscape {
+        display: none;
+    }
+
+    .picture-portrait {
+        display: flex;
+        width: 400px;
+        height: 412px;
+    }
+
+    .container {
+        flex-direction: row-reverse;
+        gap: 0;
+        flex-grow: 1;
+    }
+
+    .container-small {
+        flex-direction: row;
+        width: 100%;
+        gap: 7%;
+        margin-left: 10%;
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .picture-portrait {
+        align-self: center;
+    }
+
+    .title {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 32px;
+        width: 75%;        
+    }
+
+    .buttons {
+        flex-direction: column;
+        margin-bottom: 0;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .buttons span {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .title-small {
+        margin-bottom: 2%;
+    }
+
+    .title {
+        margin-bottom: 3%;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .picture-portrait {
+        width: 520px;
+        height: 532px;
+    }
+}
+
+
+@media (min-width: 2200px) {
+
+    .header {
+        font-size: 30px;
+    }
+
+    .title-small {
+        margin-bottom: 1%;
+        font-size: 18px;
+    }
+
+    .title {
+        margin-bottom: 2%;
+        font-size: 60px;
+    }
+    
+    .description {
+        font-size: 20px;
+    }
+
+    .picture-portrait {
+        width: 600px;
+        height: 612px;
+    }
+
+    .buttons span {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media (min-width: 3000px) {
+    .header {
+        font-size: 32px;
+    }
+
+    .title-small {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .picture-portrait {
+        width: 700px;
+        height: 712px;
+    }
+}

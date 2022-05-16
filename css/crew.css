@@ -1,0 +1,350 @@
+body {
+    background-image: url('../assets/crew/background-crew-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    gap: 4%;
+}
+
+.header {
+    display: flex;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    align-self: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header span {
+    margin-right: 18px;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.container {
+    gap: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 90%;
+    align-self: center;
+}
+
+.container-small {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7%;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+}
+
+.tabs span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.17);
+    transition: 0.2s ease-in-out;
+}
+
+.tabs span:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #383b4b;
+}
+
+.picture {
+    width: 180px;
+    height: 220px;
+}
+
+.rank {
+    font-family: bellefair, serif;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+
+.name {
+    font-family: bellefair, serif;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 6%;
+}
+
+.about {
+    font-family: barlow, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #d0d6f9;
+}
+
+/* added with JS */
+
+.active {
+    background-color: white !important;
+}
+
+
+@media (min-width: 700px) {
+    body {
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+    }
+
+    .header {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.4px;
+        align-self: flex-start;
+        margin-left: 80px;
+    }
+
+    .container {
+        width: 60%;
+        gap: 7%;
+    }
+
+    .container-small,
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        flex-grow: 0;
+    }
+
+    .img-container {
+        border-bottom: none;
+    }
+
+    .picture {
+        width: 400px;
+        height: 550px;
+    }
+
+    .container-small {
+        justify-content: space-between;
+    }
+
+    .rank {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .name {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .about {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .tabs span {
+        width: 10px;
+        height: 10px;
+    }
+
+    .content {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .tabs {
+        gap: 5%;
+    }
+}
+
+
+@media (min-height: 1000px) {
+    .about,
+    .content {
+        margin-bottom: 5%;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url('../assets/crew/background-crew-desktop.jpg');
+        gap: 0;
+    }
+
+    .header {
+        align-self: flex-start;
+        margin-left: 100px;
+        margin-bottom: 0;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.7px;
+    }
+
+    .header span {
+        margin-right: 28px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container-small {
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 7%;
+        
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        flex-grow: 0;
+        width: 50%;
+    }
+
+    .rank {
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    .name {
+       font-size: 56px;
+       line-height: 64px; 
+    }
+
+    .img-container {
+        width: fit-content;
+    }
+
+    .picture {
+        width: 400px;
+        height: 550px;
+    }
+
+    .about {
+        width: 65%;
+        font-size: 18px;
+    }
+
+    .info {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .tabs {
+        justify-content: flex-start;
+        gap: 4%;
+    }
+
+    .tabs span {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .content {
+        width: 45%;
+    }
+
+    .about {
+        width: 55%;
+    }
+
+    .picture {
+        width: 550px;
+        height: 700px;
+    }
+}
+
+
+@media (min-width: 2200px) {
+    .header {
+        font-size: 30px;
+    }
+
+    .picture {
+        width: 600px;
+        height: 850px;
+    }
+
+    .container-small {
+        align-items: center;
+        gap: 3%;
+    }
+
+    .img-container {
+        border-bottom: 1px solid #383b4b;
+    }
+
+    .content {
+        width: 35%;
+    }
+
+    .rank {
+        margin-bottom: 1%;
+    }
+
+    .name {
+        margin-bottom: 2%;
+        font-size: 60px;
+    }
+
+    .about {
+        font-size: 20px;
+        line-height: 32px;
+        width: 55%;
+    }
+
+    .tabs {
+        gap: 3%;
+    }
+}
+
+
+@media (min-width: 3000px) {
+    .header {
+        font-size: 32px;
+    }
+
+    .about {
+        width: 50%;
+    }
+
+    .tabs {
+        gap: 2%;
+    }
+}
